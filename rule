@@ -1,6 +1,5 @@
 [custom]
-enable_rule_generator=true
-overwrite_original_rules=true
+;设置规则标志位
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/zhouchengxi/clashconfig/refs/heads/main/config
 ruleset=🚀 节点选择,https://gist.githubusercontent.com/xausky/44a5472f515713067202faa649ea303f/raw/proxy.list
@@ -16,7 +15,9 @@ ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=🎯 全球直连,[]GEOIP,CN
 ruleset=🐟 漏网之鱼,[]FINAL
+;设置规则标志位
 
+;设置分组标志位
 custom_proxy_group=🚀 节点选择`select`[]♻️ 自动选择`[]🎯 全球直连`.*
 custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]♻️ 自动选择`[]🎯 全球直连`.*
@@ -27,4 +28,7 @@ custom_proxy_group=🎯 全球直连`select`[]DIRECT
 custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=⛔ 应用拦截`select`[]REJECT`[]DIRECT
 custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
+;设置分组标志位
 
+enable_rule_generator=true
+overwrite_original_rules=true
